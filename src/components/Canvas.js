@@ -39,9 +39,6 @@ class Canvas extends Component {
     handlePanZoom = e => {
         const { dx, dy, dz } = e;
         const transform = [1 + dz / 40, 0, 0, 1 + dz / 40, dx, dy];
-        this.setState({
-            transform
-        });
         this.ctx.transform(...transform);
     };
 
