@@ -35,19 +35,9 @@ class App extends Component {
     render() {
         const { x, y, width, height, rectangles } = this.state;
         return (
-            <div
-                className="App"
-                style={{
-                    display: 'flex'
-                }}
-            >
+            <div className="App">
                 <Canvas rectangles={rectangles} />
-                <form
-                    onSubmit={this.handleAddRect}
-                    style={{
-                        padding: '1.2rem'
-                    }}
-                >
+                <form onSubmit={this.handleAddRect}>
                     <label htmlFor="x">X Coord</label>
                     <input
                         type="number"
