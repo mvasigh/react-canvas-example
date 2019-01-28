@@ -21,7 +21,11 @@ class App extends Component {
         e.preventDefault();
         const { x, y, width, height, rectangles } = this.state;
         this.setState({
-            rectangles: [...rectangles, { x, y, width, height }]
+            rectangles: [...rectangles, { x, y, width, height }],
+            x: 0,
+            y: 0,
+            width: 0,
+            height: 0
         });
     };
 
