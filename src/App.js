@@ -74,10 +74,12 @@ class App extends Component {
                         value={height}
                     />
                     <button type="submit">Add Rect</button>
-
+                    <p>Click and drag to pan, scroll to zoom</p>
                     <ul>
                         {rectangles.map((rect, i) => (
-                            <li key={i}>{JSON.stringify(rect)}</li>
+                            <li key={i}>
+                                <pre>{JSON.stringify(rect)}</pre>
+                            </li>
                         ))}
                     </ul>
                 </form>
